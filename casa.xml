@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="casa">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="tipologia" type="xs:string"/>
+            <xs:element name="indirizzo" type="xs:string"/>
+            <xs:element name="piano">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="0"/>
+                        <xs:enumeration value="1"/>
+                        <xs:enumeration value="2"/>
+                        <xs:enumeration value="3"/>
+                        <xs:enumeration value="#"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="ascensore">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="si"/>
+                        <xs:enumeration value="no"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="descrizioneTestuale" type="xs:string"/>
+            <xs:element name="categoriaEnergetica">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="A"/>
+                        <xs:enumeration value="B"/>
+                        <xs:enumeration value="C"/>
+                        <xs:enumeration value="D"/>
+                        <xs:enumeration value="E"/>
+                        <xs:enumeration value="F"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="numeroVani" type="xs:integer"/>
+            <xs:element name="superficie" type="xs:integer"/>
+            <xs:element name="costo" type="xs:integer"/>
+            <xs:element name="agenzie">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="agenzia" type="Tagenzia" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:complexType name="Tagenzia">
+    <xs:sequence>
+        <xs:element name="denominazione" type="xs:string"/>
+        <xs:element name="indirizzo" type="xs:string"/>
+        <xs:element name="numeroTelefono" type="xs:string"/>
+        <xs:element name="indirizzoEmail" type="xs:string"/>
+        <xs:element name="sitoWeb" type="xs:string"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:element name="Case">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="casa"  minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<Case>
+    <casa>
+        <tipologia>villa</tipologia>
+        <indirizzo>Pescara</indirizzo>
+        <piano>#</piano>
+        <ascensore>no</ascensore>
+        <descrizioneTestuale>casa mia</descrizioneTestuale>
+        <categoriaEnergetica>A</categoriaEnergetica>
+        <numeroVani>18</numeroVani>
+        <superficie>200</superficie>
+        <costo>120000</costo>
+        <agenzie>
+            <agenzia>
+                <denominazione>Facile.it</denominazione>
+                <indirizzo>Pescara</indirizzo>
+                <numeroTelefono>333333333</numeroTelefono>
+                <indirizzoEmail>facile@gmail.it</indirizzoEmail>
+                <sitoWeb>Facile.it</sitoWeb>
+            </agenzia>
+            <agenzia>
+                <denominazione>Trivago.it</denominazione>
+                <indirizzo>Pescara</indirizzo>
+                <numeroTelefono>66666666</numeroTelefono>
+                <indirizzoEmail>trivago@gmail.it</indirizzoEmail>
+                <sitoWeb>Trivago.it</sitoWeb>
+            </agenzia>
+        </agenzie>
+    </casa>
+    <casa>
+        <tipologia>villetta</tipologia>
+        <indirizzo>Pescara</indirizzo>
+        <piano>#</piano>
+        <ascensore>no</ascensore>
+        <descrizioneTestuale>casa tua</descrizioneTestuale>
+        <categoriaEnergetica>B</categoriaEnergetica>
+        <numeroVani>10</numeroVani>
+        <superficie>100</superficie>
+        <costo>60000</costo>
+        <agenzie>
+            <agenzia>
+                <denominazione>Facile.it</denominazione>
+                <indirizzo>Pescara</indirizzo>
+                <numeroTelefono>333333333</numeroTelefono>
+                <indirizzoEmail>facile@gmail.it</indirizzoEmail>
+                <sitoWeb>Facile.it</sitoWeb>
+            </agenzia>
+            <agenzia>
+                <denominazione>Trivago.it</denominazione>
+                <indirizzo>Pescara</indirizzo>
+                <numeroTelefono>66666666</numeroTelefono>
+                <indirizzoEmail>trivago@gmail.it</indirizzoEmail>
+                <sitoWeb>Trivago.it</sitoWeb>
+            </agenzia>
+        </agenzie>
+    </casa>
+</Case>
